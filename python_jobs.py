@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 
 f = open("python_jobs_results.txt", "w")
-html = open("python_jobs.html", "w")
+html = open("python_jobs_webpage.html", "w") 
 
 URL = "https://pythonjobs.github.io"
 page = requests.get(URL)
@@ -15,9 +15,9 @@ results = soup.find(id="main")
 
 job_list = results.find("section", class_="job_list")
 
-job_elements = job_list.find_all("div", class_="job")
+print(job_list.prettify(), file=html)
 
-print(job_list, file=html)
+job_elements = job_list.find_all("div", class_="job")
 
 for job in job_elements:
     title_element = job.find("h1")

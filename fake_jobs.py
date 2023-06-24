@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 
 f = open("fake_jobs_results.txt", "w")
-html = open("fake_jobs.html", "w")
+html = open("fake_jobs_webpage.html", "w")
 
 URL = "https://realpython.github.io/fake-jobs/"
 page = requests.get(URL)
