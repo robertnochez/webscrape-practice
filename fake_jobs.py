@@ -40,3 +40,4 @@ for job_element in python_job_elements:
     print(f"Apply here: {link_url}\n", file=f)
 
 f.close()
+html.close()
