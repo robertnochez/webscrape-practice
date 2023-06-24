@@ -1,20 +1,32 @@
+Source: https://pythonjobs.github.io/
+
 Strats Python Developer
+HBK Europe Management LLP
 London, UK
 Thu, 06 Oct 2022
+Job listing: https://pythonjobs.github.io/jobs/hbk-strats-developer.html
 
 Python Software Developer
+Open Data Services Co-operative
 Remote, UK-only
 Thu, 23 Jun 2022
+Job listing: https://pythonjobs.github.io/jobs/open-data-services-co-operative-python-software-developer.html
 
 Senior Software Engineer, Back-End (Remote)
+Oomnitza
 Galway, Ireland, Remote
 Wed, 30 Mar 2022
+Job listing: https://pythonjobs.github.io/jobs/oomnitza-back-end-sw-enginneer-irl-remote.html
 
 Python Backend Engineer
+BMAT
 Remote
 Tue, 23 Nov 2021
+Job listing: https://pythonjobs.github.io/jobs/bmat-python-backend-engineer.html
 
 Senior Backend Engineer
+BMAT
 Remote
 Tue, 23 Nov 2021
+Job listing: https://pythonjobs.github.io/jobs/bmat-senior-backend-engineer.html
 
