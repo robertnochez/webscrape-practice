@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 
 f = open("fake_jobs_results.txt", "w")
+html = open("fake_jobs.html", "w")
 
 URL = "https://realpython.github.io/fake-jobs/"
 page = requests.get(URL)
@@ -13,7 +14,7 @@ soup = BeautifulSoup(page.content, "html.parser")
 
 results = soup.find(id="ResultsContainer") # Finds specific HTML element by its ID
 
-# print(results.prettify()) # Prints all HTML contained within the <div>
+print(results.prettify(), file=html) # Prints all HTML contained within the <div>
 
 job_elements = results.find_all("div", class_="card-content")
 
@@ -31,6 +32,7 @@ for job_element in python_job_elements:
     location_element = job_element.find("p", class_="location")
     time_element = job_element.find("time")
     link_url = job_element.find_all("a")[1]["href"]
+    
     print(title_element.text.strip(), file=f)
     print(company_element.text.strip(), file=f)
     print(location_element.text.strip(), file=f)
