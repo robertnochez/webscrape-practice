@@ -1,9 +1,8 @@
 import requests
 from bs4 import BeautifulSoup
 
-# f = open("python_jobs_results.txt", "w")
+f = open("python_jobs_results.txt", "w")
 html = open("python_jobs.html", "w")
-# page = requests.get(URL)
 
 # print("Source: " + URL, file=f)
 # print(file=f)
@@ -52,8 +51,15 @@ print(job_list, file=html)
 
 for job in job_elements:
     title_element = job.find("h1")
-    
-    print(title_element.text.strip())
+    info = job.find_all("span", class_="info")
+    location = info[0].text.strip()
+    time = info[1].text.strip()
+
+
+    print(title_element.text.strip(), file=f)
+    print(location, file=f)
+    print(time, file=f)
+    print(file=f)
 
 """
 for job_element in job_elements:
